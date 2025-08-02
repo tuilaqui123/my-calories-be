@@ -13,7 +13,7 @@ async function bootstrap() {
     }),
   );
   app.enableCors(); // Bật CORS nếu cần thiết
-  app.setGlobalPrefix('api'); // Thiết lập tiền tố toàn cục cho các route
+  // app.setGlobalPrefix('api'); // Thiết lập tiền tố toàn cục cho các route
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();

@@ -18,7 +18,9 @@ export abstract class BaseService<T extends ObjectLiteral> {
   }
 
   async create(data: Partial<T>): Promise<T> {
-    const entity = this.repository.create(data as import('typeorm').DeepPartial<T>);
+    const entity = this.repository.create(
+      data as import('typeorm').DeepPartial<T>,
+    );
     return this.repository.save(entity as T);
   }
 

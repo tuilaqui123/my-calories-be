@@ -46,6 +46,9 @@ config
 .env.production.local
 .env.local
 
+# assets
+/src/assets/sup
+
 # temp directory
 .temp
 .tmp

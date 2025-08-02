@@ -1,7 +1,7 @@
 import { Controller, Get, Injectable } from '@nestjs/common';
 import { BaseController } from 'src/core/controller/base.controller';
 import { FoodDataTypesEntity } from '../entity/food_data_types.entity';
-import { FoodDataTypesService } from './food_data_types.service';
+import { FoodDataTypesService } from '../service/food_data_types.service';
 
 @Controller('foods')
 @Injectable()
